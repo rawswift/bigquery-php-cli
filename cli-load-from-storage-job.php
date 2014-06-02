@@ -80,7 +80,7 @@ print_r($response);
         $info = $service->jobs->get($project_id, $job_id);
         $status = $info->getStatus();
         if ($status->state == 'DONE') {
-        	echo "\nJob Successfull. Fin!\n";
+        	echo "\nJob Successful. Fin!\n";
             break;
         } else {
         	// apply exponential backoff
